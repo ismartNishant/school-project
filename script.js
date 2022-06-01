@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
 //javascript for responsive navigation sidebar menu
 const menuBtn = document.querySelector(".hamburger-menu");
 const navigation = document.querySelector(".navigation");
-const navigationItems = document.querySelectorAll(".navigation li")
+const navigationItems = document.querySelectorAll(".navigation a")
 
 menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("active");
@@ -56,7 +56,7 @@ function reveal() {
 $(window).on('load',function(){
   setTimeout(function(){
     $(".preloader").fadeOut('slow');
-  },3000)
+  },2000)
 })
 
 
@@ -75,7 +75,7 @@ $(document).ready(function () {
 
   });
 
-  $('.navigation li').click(function () {
+  $('.navigation a').click(function () {
     $(this).addClass('active').siblings().removeClass('active');
   });
 
