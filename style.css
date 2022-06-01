@@ -89,11 +89,12 @@ font-family: 'Suez One', serif;*/
 */
 nav {
   transition: all 0.5s ease-in-out;
-  background: rgba(255, 255, 255, 0.053);
+  background: rgba(14, 1, 1, 0.278);
   padding: 1.3rem 1.8rem !important;
 }
 nav.sticky {
   padding: 1rem 1rem !important;
+  background: rgba(14, 1, 1, 0.629);
 }
 .navbar-brand {
   color: var(--text-color);
@@ -240,12 +241,70 @@ nav.sticky {
 
 .main-banner .caption h2 {
   font-size: 5rem;
+  font-weight: 300 !important;
+  font-family: "Fredoka One", cursive;
 }
 /* 
 .main-banner .caption h2 em {}
 
 .main-banner .caption p {} */
 
+
+.my-bg{
+  position: absolute;
+  width: 100%;
+}
+
+.my-bg{
+  background-image: url(./images/meetings-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: #fff;
+}
+.col-lg-3 .bg{
+  background: rgba(8, 1, 1, 0.351) ;
+}
+.my-bg{
+  padding: 3rem 0rem;
+}
+.my-bg .card{
+  transition: all .8s ease-in-out;
+  border-radius: 1rem 0rem;
+}
+.my-bg .card:hover{
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.284);
+  margin-top: 1rem;
+}
+.title{
+  padding: 1rem 0rem;
+  margin: 1rem 2rem;
+}
+.events-img{
+  overflow: hidden;
+  height: 60vh;
+}
+.events-img img{
+  width: 100%;
+  object-fit: cover;
+}
+.gallery  video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all .5s ease-in-out;
+}
+.gallery video:hover{
+  transform: scale(1.1);
+}
+.slider-1 .col-lg-3{
+  height: 15rem;
+}
+.slider-1 .col.lg-3 video{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 @media only screen and (max-width: 1100px) {
   .navbar-brand {
     font-size: 2.1rem;
@@ -356,6 +415,7 @@ nav.sticky {
 }
 
 @media only screen and (max-width: 600px) {
+  
   nav {
     padding: 0.4rem !important;
   }
@@ -401,6 +461,17 @@ nav.sticky {
     width: 80%;
  
   }
+  .title {
+    padding: 1rem 0rem;
+    margin: 1rem 0.5rem;
+}
+.my-bg {
+  padding: 1rem 0rem;
+}
+
+.events-img img{
+  height: 60vh;
+}
 }
 
 @media only screen and (max-width: 450px) {

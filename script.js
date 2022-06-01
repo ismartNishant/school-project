@@ -60,6 +60,7 @@ $(window).on('load',function(){
 })
 
 
+
 $(document).ready(function () {
   $('.controls .buttons').click(function () {
 
