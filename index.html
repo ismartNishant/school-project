@@ -11,9 +11,6 @@
   <link rel="stylesheet" href="style.css">
   <!-- fox icons cdn-->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-  <!-- font awesome cdn link  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
   <!--aos css-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Nishant Rajput</title>
@@ -22,21 +19,22 @@
 <body>
   <!--scroll to top button -->
   <div class="scrollToTop-btn">
-    <i class="fas fa-angle-up"></i>
+    <i class='bx bx-up-arrow-circle p-1 fs-1 rounded-pill'></i>
   </div>
   <!-- start preloader-->
-  <div class="preloader">
+  <!-- <div class="preloader">
     <div class="wraper">
       <h1>Loading <i class='bx bx-circle'></i><i class='bx bx-circle bx-fade-right bx-flip-horizontal'></i><i
           class='bx bx-circle bx-fade-right bx-flip-horizontal'></i><i
           class='bx bx-circle bx-fade-right bx-flip-horizontal'></i></h1>
     </div>
-  </div>
+  </div> -->
   <!-- end preloader-->
   <!--header section -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid bg-transparent">
-      <a class="navbar-brand p-0 d-flex align-items-center" href="#"><i class='bx bxs-graduation bg-light text-danger rounded-3 me-2' ></i> Education </a>
+      <a class="navbar-brand p-0 d-flex align-items-center" href="#"><i
+          class='bx bxs-graduation bg-light text-danger rounded-3 me-2'></i> Education </a>
       <div class="navigation-bar " id="nav-menu">
         <!-- MOBILE MENU TOGGLE -->
         <div class="hamburger-menu" id="hamburger-menu">
@@ -58,14 +56,14 @@
   <!--header section ends here -->
   <!--================ Landing section starts here ====================== -->
   <!-- hero slider -->
-  <section class="hero-section main-banner " >
+  <section class="hero-section main-banner ">
     <video autoplay muted loop id="bg-video">
       <source src="./videos/course-video.mp4" type="video/mp4" />
     </video>
 
     <div class="video-overlay header-text" data-aos="slide-left" data-aos-offset="200" data-aos-delay="1000"
-    data-aos-duration="3000" data-aos-easing="ease-in-quad" data-aos-mirror="true" data-aos-once="false"
-    data-aos-anchor-placement="top-center">
+      data-aos-duration="3000" data-aos-easing="ease-in-quad" data-aos-mirror="true" data-aos-once="false"
+      data-aos-anchor-placement="top-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-light">
@@ -74,7 +72,8 @@
               <h1>Welcome to Education</h1>
               <p>This is an education school for all</p>
               <div class="main-button-red mt-4 ">
-                <div class="scroll-to-section"><a class="btn btn-outline-danger rounded-pill text-light border-3 px-3" href="#contact">Join Us Now!</a></div>
+                <div class="scroll-to-section"><a class="btn btn-outline-danger rounded-pill text-light border-3 px-3"
+                    href="#contact">Join Us Now!</a></div>
               </div>
             </div>
           </div>
@@ -84,70 +83,89 @@
 
   </section>
   <!-- /hero slider -->
-    <!-- ***** Main Banner Area End ***** -->
+  <!-- ***** Main Banner Area End ***** -->
 
-    <section class="my-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="owl-service-item owl-carousel">
-            
-              <div class="item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
-                </div>
-                <div class="down-content">
-                  <h4>Best Education</h4>
-                  <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                </div>
+  <section class="my-bg">
+    <div class="col-lg-5 m-auto">
+      <div class="card bg post-card ">
+        <!--post header -->
+        <div class="card-header ">
+          <div class="d-flex justify-content-between py-2 mb-3">
+            <div class="d-flex">
+              <div class="user-img rounded-circle overflow-hidden me-3">
+                <img src="./images/course-01.jpg" class="w-100 h-100" alt="...">
+
               </div>
-              
-              <div class="item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
-                </div>
-                <div class="down-content">
-                  <h4>Best Teachers</h4>
-                  <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                </div>
+              <div>
+                <h5 class="card-title m-0">Special title treatment</h5>
+                <p class="card-text m-0">tuesday 11.04.2022 <i class='bx bx-world'></i></p>
               </div>
-              
-              <div class="item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
-                </div>
-                <div class="down-content">
-                  <h4>Best Students</h4>
-                  <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                </div>
-              </div>
-              
-              <div class="item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
-                </div>
-                <div class="down-content">
-                  <h4>Online Meeting</h4>
-                  <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                </div>
-              </div>
-              
-              <div class="item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
-                </div>
-                <div class="down-content">
-                  <h4>Best Networking</h4>
-                  <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                </div>
-              </div>
-              
             </div>
+            <div>
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+          </div>
+          <div>
+            <p class="m-0">[FREE DEMO SESSION, Web Development Workshop]
+              Want to learn Web Development? Learn & Build Website using HTML, CSS & JS.
+              Our Expert Ms Harshita Sharma [Mentor, Instructor - PrepBytes, Ex SDE Mindtree ]</p>
+            <a class="m-0" href="#">See Translation</a>
+          </div>
+        </div>
+        <!--post header end -->
+        <!--post body main post img and buttons-->
+        <div class="card-body">
+          <div class="post-img m-2 ">
+            <img src="./images/course-03.jpg" class="w-100 " alt="....">
+            <div class="pt-2 d-flex justify-content-between flex-wrap">
+              <p class="m-0"> <i class='bx bx-like p-1 rounded-pill  btn btn-primary'></i> Nancy,lisa, 200 more</p>
+              <p class="m-0">Comments</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-evenly py-1 ">
+            <button type="button" class="btn btn-dark d-flex align-items-center justify-content-between"><i
+                class='bx bx-like me-2'></i> Like</button>
+            <button type="button" class="btn btn-dark d-flex align-items-center ustify-content-between"><i
+                class='bx bx-message me-2'></i> Comment</button>
+            <button type="button" class="btn btn-dark d-flex align-items-center ustify-content-between"><i
+                class='bx bx-share bx-flip-horizontal me-2'></i> Comment</button>
+          </div>
+
+          <div class="p-2 my-1">
+            <i class='bx bx-like p-1 rounded-pill fs-3 btn btn-outline-success'></i>
+            <i class='bx bx-dislike p-1 rounded-pill fs-3 btn btn-outline-danger'></i>
+            <i class='bx bxs-smile p-1 rounded-pill fs-3 btn btn-outline-warning'></i>
+          </div>
+
+          <div>
+            <div class="d-flex justify-content-between mb-2">
+              <p class="m-0">See previous comments</p>
+              <p class="m-0">Most relevent</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center  mt-3  gap-1">
+              <div class="comment-img  rounded-circle overflow-hidden ">
+                <img src="./images/course-01.jpg" class="w-100 h-100" alt="....">
+
+              </div>
+              <!--post type comment -->
+              <div class="d-flex justify-content-center rounded-pill border px-3  col-10 align-items-center py-2">
+                <input style="color: #fff; outline: none; box-shadow: none; height: 2.3rem;" type="text"
+                  class="form-control  bg-transparent border-0 px-3 me-4 " placeholder="Type Something . . . ." a>
+                <span class=" d-flex justify-content-center align-items-center bg-transparent " id="basic-addon2">
+                  <i class='bx bxs-smile btn-outline-warning btn rounded-pill p-1 fs-4'></i>
+                  <i class='bx bx-camera btn-outline-info btn rounded-pill p-1 fs-4 '></i>
+                  <i class='bx bxs-file-gif btn-outline-success btn rounded-pill p-1 fs-4'></i>
+                  <i class='bx bx-sticker btn-outline-danger btn rounded-pill p-1 fs-4'></i>
+                </span>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-    </section>
-  
+    </div>
+  </section>
+
 
 
 

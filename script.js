@@ -1,4 +1,5 @@
 
+
 //javascript for navigation bar effects on scroll
 window.addEventListener("scroll", function () {
   const header = document.querySelector("nav");
@@ -35,49 +36,84 @@ scrollBtn.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
 });
 
-//javascript for reveal website elements on scroll
-window.addEventListener("scroll", reveal);
 
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var revealTop = reveals[i].getBoundingClientRect().top;
-    var revealPoint = 50;
 
-    if (revealTop < windowHeight - revealPoint) {
-      reveals[i].classList.add("active");
-    }
-  }
+
+//preloader 
+window.onload = function (){
+  setTimeout(function (){
+    let loader = document.querySelector(".preloader");
+    loader.classList.add("vanish")
+  },2500)
 }
 
-//preloader
-$(window).on('load',function(){
-  setTimeout(function(){
-    $(".preloader").fadeOut('slow');
-  },2000)
-})
-
-
-
-$(document).ready(function () {
-  $('.controls .buttons').click(function () {
-
-    $(this).addClass('button-active').siblings().removeClass('button-active');
-
-    let filter = $(this).attr('data-filter');
-    if (filter == 'all') {
-      $('.work .image').show(400);
-    } else {
-      $('.work .image').not('.' + filter).hide(200);
-      $('.work .image').filter('.' + filter).show(400);
+new Glider(document.querySelector('#slider-1'), {
+  // Mobile-first defaults
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  scrollLock: true,
+  rewind:true,
+  dots: '#resp-dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  },
+  responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 775,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
     }
-
-  });
-
-  $('.navigation a').click(function () {
-    $(this).addClass('active').siblings().removeClass('active');
-  });
-
+  ]
 });
+new Glider(document.querySelector('#slider-2'), {
+  // Mobile-first defaults
+  slidesToShow: 1,
+  rewind:true,
+  slidesToScroll: 1,
+  scrollLock: true,
+  dots: '#resp-dotss',
+  arrows: {
+    prev: '.glider-prevv',
+    next: '.glider-nextt'
+  },
+  responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 775,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    }
+  ]
+});
+
