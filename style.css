@@ -401,7 +401,12 @@ nav.sticky {
 .carousel-item {
   height: 70vh !important;
 }
-
+@media only screen and (max-width: 1200px){
+  
+  .book-card{
+    width: 48%;
+  }
+}
 @media only screen and (max-width: 1100px) {
   .navbar-brand {
     font-size: 2.1rem;
@@ -511,13 +516,19 @@ nav.sticky {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .main-banner .caption h6 {
     font-weight: 500;
   }
 
   .main-banner .caption h2 {
     font-size: 36px;
+  }
+  .about-holder{
+    max-width: 670px!important;
+  }
+  .contact-holder{
+    max-width: 670px!important;
   }
 }
 
@@ -612,7 +623,20 @@ nav.sticky {
     padding-bottom: 1rem !important;
   }
 }
-
+@media only screen and (max-width: 576px){
+  .book-card{
+    width: 90%;
+  }
+  .book-card:first-child{
+    margin-bottom: 1rem;
+  }
+  .connectus{
+    font-size: 0.8rem!important;
+  }
+  .handles{
+    font-size: 1.2rem!important;
+  }
+}
 @media only screen and (max-width: 450px) {
   .scrollToTop-btn {
     right: 10px !important;
