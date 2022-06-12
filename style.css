@@ -16,6 +16,7 @@ font-family: 'Suez One', serif;*/
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  
 }
 
 body.modal-open .bg-blur {
@@ -374,6 +375,14 @@ nav.sticky {
 .modal-body i {
   cursor: pointer !important;
 }
+.fund-holder {
+  filter: grayscale(0);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.fund-holder:hover {
+  filter: grayscale(1);
+}
 
 /* //postcss */
 
@@ -433,7 +442,11 @@ nav.sticky {
     margin-left: 0.8rem;
   }
 }
-
+@media only screen and (max-width: 992px){
+  .contact-holder{
+    max-width: 860px!important;
+  }
+}
 @media only screen and (max-width: 950px) {
   .hamburger-menu {
     display: grid;
